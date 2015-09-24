@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Player 1"
+        android:id="@+id/oneOfTwoPlayersButton"
+        android:layout_weight="1"
+        android:background="@color/red" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Player 2"
+        android:id="@+id/twoOfTwoPlayersButton"
+        android:layout_weight="1"
+        android:background="@color/blue" />
+</LinearLayout>

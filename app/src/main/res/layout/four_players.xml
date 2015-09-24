@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified from Emil Adz,
+http://stackoverflow.com/questions/16589389/android-how-to-split-a-view-in-4-equal-parts -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player 1"
+            android:layout_weight="1.0"
+            android:id="@+id/oneOfFourPlayersButton"
+            android:background="@color/red" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player 2"
+            android:id="@+id/twoOfFourPlayersButton"
+            android:background="@color/blue"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player 3"
+            android:layout_weight="1.0"
+            android:id="@+id/threeOfFourPlayersButton"
+            android:background="@color/green" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Player 4"
+            android:id="@+id/fourOfFourPlayersButton"
+            android:background="@color/orange"
+            android:layout_alignTop="@+id/threeOfFourPlayersButton"
+            android:layout_weight="1.0" /> /
+
+    </LinearLayout>
+
+</LinearLayout>

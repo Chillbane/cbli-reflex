@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How many players?"
+        android:id="@+id/howManyPlayersText"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center" />
+    <!-- Above line retrieved from teepee,
+    http://stackoverflow.com/questions/7326155/align-text-center-with-android -->
+
+    <Button
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:text="Two Players"
+        android:id="@+id/twoPlayersButton"
+        android:layout_gravity="center_vertical"
+        android:layout_above="@+id/threePlayersButton"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three Players"
+        android:id="@+id/threePlayersButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Four Players"
+        android:id="@+id/fourPlayersButton"
+        android:layout_below="@+id/threePlayersButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
