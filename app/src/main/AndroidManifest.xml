@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Retrieved "android:theme="@style/Theme.AppCompat.NoActionBar" code from Vinod Devgan,
+http://tips.androidhive.info/2013/10/android-make-activity-as-fullscreen-removing-title-bar-or-
+action-bar/, retrieved 08/24/15 -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.ualberta.cs.cbli_reflex" >
 
@@ -18,11 +23,7 @@
         </activity>
         <activity
             android:name=".GameShowBuzzerActivity"
-            android:label="Game Show Buzzer"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ca.ualberta.cs.cbli_reflex.MainActivity" />
+            android:label="Game Show Buzzer" >
         </activity>
         <activity
             android:name=".ReactionTimerActivity"
@@ -31,6 +32,21 @@
         <activity
             android:name=".StatisticsActivity"
             android:label="Statistics" >
+        </activity>
+        <activity
+            android:name=".TwoPlayersActivity"
+            android:label="@string/title_activity_two_players"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ThreePlayersActivity"
+            android:label="@string/title_activity_three_players"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FourPlayersActivity"
+            android:label="@string/title_activity_four_players"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
     </application>
 

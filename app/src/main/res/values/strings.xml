@@ -6,4 +6,7 @@
     <string name="title_activity_how_many_players">HowManyPlayersActivity</string>
     <string name="title_activity_reaction_timer">ReactionTimerActivity</string>
     <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_two_players">TwoPlayersActivity</string>
+    <string name="title_activity_three_players">ThreePlayersActivity</string>
+    <string name="title_activity_four_players">FourPlayersActivity</string>
 </resources>
