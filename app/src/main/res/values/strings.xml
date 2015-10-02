@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_how_many_players">HowManyPlayersActivity</string>
+    <string name="title_activity_reaction_timer">ReactionTimerActivity</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
 </resources>

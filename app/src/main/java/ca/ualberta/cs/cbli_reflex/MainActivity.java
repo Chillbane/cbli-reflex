@@ -1,9 +1,11 @@
 package ca.ualberta.cs.cbli_reflex;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,4 +36,24 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /* Called when the user clicks the Reaction Timer button */
+    public void openReactionTimer(View view) {
+        Intent intent = new Intent(this, ReactionTimerActivity.class);
+        startActivity(intent);
+    }
+
+    /* Called when the user clicks the Game Show Buzzer button */
+    public void openGameShowBuzzer(View view) {
+        Intent intent = new Intent(this, GameShowBuzzerActivity.class);
+        startActivity(intent);
+    }
+
+    /* Called when the user clicks the Statistics button */
+    public void openStatistics(View view) {
+        Intent intent = new Intent(this, StatisticsActivity.class);
+        startActivity(intent);
+    }
+
+
 }

@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".GameShowBuzzerActivity"
+            android:label="Game Show Buzzer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.ualberta.cs.cbli_reflex.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReactionTimerActivity"
+            android:label="Reaction Timer" >
+        </activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="Statistics" >
+        </activity>
     </application>
 
 </manifest>
