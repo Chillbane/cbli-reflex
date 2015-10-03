@@ -11,3 +11,5 @@ Emil Adz, http://stackoverflow.com/questions/16589389/android-how-to-split-a-vie
 Junior Hazel, http://stackoverflow.com/questions/21655362/how-to-remove-example-action, retrieved 10/02/15
 
 Vinod Devgan, http://tips.androidhive.info/2013/10/android-make-activity-as-fullscreen-removing-title-bar-or-action-bar/, retrieved 10/02/15
+
+jeevamuthu, http://stackoverflow.com/questions/3965122/android-how-to-align-message-in-alertdialog, retrieved 10/02/15
