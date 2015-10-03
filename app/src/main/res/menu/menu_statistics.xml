@@ -4,4 +4,6 @@
     tools:context="ca.ualberta.cs.cbli_reflex.StatisticsActivity">
     <item android:id="@+id/action_settings" android:title="Delete All"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/email_setting" android:title="Email"
+        android:orderInCategory="100" app:showAsAction="never" />
 </menu>

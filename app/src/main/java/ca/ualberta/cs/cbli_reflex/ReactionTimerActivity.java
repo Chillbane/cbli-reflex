@@ -1,9 +1,16 @@
 package ca.ualberta.cs.cbli_reflex;
 
+import android.app.AlertDialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ReactionTimerActivity extends ActionBarActivity {
 
@@ -11,6 +18,17 @@ public class ReactionTimerActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reaction_timer_wait);
+
+        displayMessage("When you see GO, tap as fast as you can");
+
+        Button waitButton = (Button) findViewById(R.id.reactionTimerWaitButton);
+        waitButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+            }
+        });
+
+        waitButton.setText("GO");
     }
 
     @Override
@@ -34,4 +52,20 @@ public class ReactionTimerActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /* Retrieved from jeevamuthu, http://stackoverflow.com/questions/3965122/android-how-to-
+     * align-message-in-alertdialog, 10/02/15
+     */
+    // Display prompt with message
+    public void displayMessage(String text) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(text);
+        builder.setPositiveButton("OK", null);
+        AlertDialog dialog = builder.show();
+        TextView messageText = (TextView)dialog.findViewById(android.R.id.message);
+        messageText.setGravity(Gravity.CENTER);
+        dialog.show();
+    }
+
+
 }
