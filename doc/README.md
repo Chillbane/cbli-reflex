@@ -21,3 +21,10 @@ Vivien Barousse, http://stackoverflow.com/questions/6029495/how-can-i-generate-r
 Pushp Raj Saurabh, http://stackoverflow.com/questions/17716813/cannot-resolve-maketext-method-of-toast, retrieved 10/04/15
 
 Joseph82, http://stackoverflow.com/questions/26168225/disable-button-after-first-click, retrieved 10/04/15
+
+Sam, http://stackoverflow.com/questions/12150646/prevent-back-button-from-closing-a-dialog-box, retrieved 10/04/15
+
+Rams M, http://ramsandroid4all.blogspot.in/2013/01/working-with-multiple-buttons.html, retrieved 10/04/15 
+
+Narasimha Battini, http://stackoverflow.com/questions/4204017/how-to-disable-button-click, retrieved 10/04/15
+
