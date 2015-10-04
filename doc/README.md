@@ -16,4 +16,6 @@ jeevamuthu, http://stackoverflow.com/questions/3965122/android-how-to-align-mess
 
 pomber, http://stackoverflow.com/questions/3072173/how-to-call-a-method-after-a-delay-in-android, retrieved 10/03/15
 
-Vivien Barousse, http://stackoverflow.com/questions/6029495/how-can-i-generate-random-number-in-specific-range-in-android, 10/03/15
+Vivien Barousse, http://stackoverflow.com/questions/6029495/how-can-i-generate-random-number-in-specific-range-in-android, retrieved 10/03/15
+
+Pushp Raj Saurabh, http://stackoverflow.com/questions/17716813/cannot-resolve-maketext-method-of-toast, retrieved 10/04/15
