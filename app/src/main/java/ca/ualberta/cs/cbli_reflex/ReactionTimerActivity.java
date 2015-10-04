@@ -58,6 +58,11 @@ public class ReactionTimerActivity extends ActionBarActivity {
     // Display prompt with message
     public void displayMessage(String text) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        /* Following line from Sam, http://stackoverflow.com/questions/12150646/prevent-back-button
+         *-from-closing-a-dialog-box, 10/04/15
+         */
+        builder.setCancelable(false);
         builder.setMessage(text);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override

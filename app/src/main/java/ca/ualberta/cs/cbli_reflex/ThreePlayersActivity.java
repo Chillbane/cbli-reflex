@@ -1,16 +1,36 @@
 package ca.ualberta.cs.cbli_reflex;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class ThreePlayersActivity extends ActionBarActivity {
+/* multiple button handling modified from Rams M, http://ramsandroid4all.blogspot.in/2013/01/
+ * working-with-multiple-buttons.html, retrieved 10/04/15
+ */
+
+public class ThreePlayersActivity extends ActionBarActivity implements View.OnClickListener{
+
+    Button player1Button, player2Button, player3Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.three_players);
+
+        player1Button = (Button)findViewById(R.id.oneOfThreePlayersButton);
+        player2Button = (Button)findViewById(R.id.twoOfThreePlayersButton);
+        player3Button = (Button)findViewById(R.id.threeOfThreePlayersButton);
+
+        player1Button.setOnClickListener(this);
+        player2Button.setOnClickListener(this);
+        player3Button.setOnClickListener(this);
     }
 
     @Override
@@ -33,5 +53,56 @@ public class ThreePlayersActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        GameShowBuzzerController gsbc = new GameShowBuzzerController();
+        String message = null;
+
+        switch (v.getId()) {
+            case R.id.oneOfThreePlayersButton:
+                gsbc.addBuzz(3, 1);
+                message = "Player 1 clicked first";
+                break;
+            case R.id.twoOfThreePlayersButton:
+                gsbc.addBuzz(3, 2);
+                message = "Player 2 clicked first";
+                break;
+            case R.id.threeOfThreePlayersButton:
+                gsbc.addBuzz(3, 3);
+                message = "Player 3 clicked first";
+                break;
+        }
+
+        /* retrieved from Narasimha Battini, http://stackoverflow.com/questions/4204017/how-to-
+         * disable-button-click, 10/04/15
+         */
+        player1Button.setEnabled(false);
+        player2Button.setEnabled(false);
+        player3Button.setEnabled(false);
+        displayMessage(message);
+
+    }
+
+    public void displayMessage(String text) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        /* Following line from Sam, http://stackoverflow.com/questions/12150646/prevent-back-button
+         *-from-closing-a-dialog-box, 10/04/15
+         */
+        builder.setCancelable(false);
+        builder.setMessage(text);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int BUTTON_POSITIVE) {
+                player1Button.setEnabled(true);
+                player2Button.setEnabled(true);
+                player3Button.setEnabled(true);
+            }
+        });
+        AlertDialog dialog = builder.show();
+        TextView messageText = (TextView)dialog.findViewById(android.R.id.message);
+        messageText.setGravity(Gravity.CENTER);
+        dialog.show();
     }
 }
