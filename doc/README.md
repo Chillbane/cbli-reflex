@@ -15,3 +15,5 @@ Vinod Devgan, http://tips.androidhive.info/2013/10/android-make-activity-as-full
 jeevamuthu, http://stackoverflow.com/questions/3965122/android-how-to-align-message-in-alertdialog, retrieved 10/02/15
 
 pomber, http://stackoverflow.com/questions/3072173/how-to-call-a-method-after-a-delay-in-android, retrieved 10/03/15
+
+Vivien Barousse, http://stackoverflow.com/questions/6029495/how-can-i-generate-random-number-in-specific-range-in-android, 10/03/15
