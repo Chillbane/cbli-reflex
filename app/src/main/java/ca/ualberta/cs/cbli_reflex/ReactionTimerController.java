@@ -31,11 +31,11 @@ public class ReactionTimerController {
         return reactionTimeList;
     }
 
-    public void addReactionTime(long reactionTime) {
+    public void addReactionTime(int reactionTime) {
         getReactionTimeList().addReactionTime(reactionTime);
     }
 
-    public long getReactionTime(int i) {
+    public int getReactionTime(int i) {
         return getReactionTimeList().getReactionTime(i);
     }
 

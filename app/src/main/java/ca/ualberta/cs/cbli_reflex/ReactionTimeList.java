@@ -25,13 +25,13 @@ import java.util.List;
  */
 public class ReactionTimeList {
 
-    protected List<Long> reactionTimesList = new ArrayList<Long>();
+    protected List<Integer> reactionTimesList = new ArrayList<Integer>();
 
-    public void addReactionTime(long reactionTime) {
+    public void addReactionTime(int reactionTime) {
         reactionTimesList.add(reactionTime);
     }
 
-    public long getReactionTime(int i) {
+    public int getReactionTime(int i) {
         return reactionTimesList.get(i);
     }
 
