@@ -1,6 +1,8 @@
 # cbli-reflex
 Android app with reaction timer and game show buzzer modes
 
+_____________________________________________________________________________
+
 License:
 
 Copyright 2015 Carin Li
@@ -17,6 +19,7 @@ Copyright 2015 Carin Li
    See the License for the specific language governing permissions and
    limitations under the License.
 
+_____________________________________________________________________________
 
 Resources:
 
@@ -51,6 +54,12 @@ Richard Tingle, http://stackoverflow.com/questions/19090526/dividing-two-integer
 Payload Media, http://www.techotopia.com/index.php/Creating_and_Managing_Overflow_Menus_in_Android_Studio, retrieved 10/05/15
 
 Android Open Source Project, https://developer.android.com/guide/components/intents-common.html#Email, retrieved 05/10/15
+
+_____________________________________________________________________________
+
+Student Picker: Randomly pick students to answer questions
+
+Copyright (C) 2015 Carin Li Abram Hindle abram.hindle@softwareprocess.ca
 
 
 GNU GENERAL PUBLIC LICENSE
