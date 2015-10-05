@@ -36,6 +36,7 @@ _____________________________________________________________________________
 Known Issues:
 
 1) Email functioned on phone, but not on emulator
+
 2) Data does not persist upon ending app
 
 _____________________________________________________________________________
