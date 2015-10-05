@@ -21,6 +21,26 @@ Copyright 2015 Carin Li
 
 _____________________________________________________________________________
 
+Video Demonstration:
+
+Screen capture of emulator for submission: https://www.youtube.com/watch?v=SyEWhc5AteE
+ - Email not functioning
+ 
+
+Extra second video of phone using camera: https://www.youtube.com/watch?v=DFqOkoGJAGY
+ - Over 2 minutes
+ - Email functions correctly
+
+_____________________________________________________________________________
+
+Known Issues:
+
+1) Email functioned on phone, but not on emulator
+
+2) Data does not persist upon ending app
+
+_____________________________________________________________________________
+
 Resources:
 
 teepee, http://stackoverflow.com/questions/7326155/align-text-center-with-android, retrieved 09/23/15
