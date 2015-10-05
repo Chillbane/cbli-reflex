@@ -28,3 +28,7 @@ Rams M, http://ramsandroid4all.blogspot.in/2013/01/working-with-multiple-buttons
 
 Narasimha Battini, http://stackoverflow.com/questions/4204017/how-to-disable-button-click, retrieved 10/04/15
 
+Richard Tingle, http://stackoverflow.com/questions/19090526/dividing-two-integers-to-a-double-in-java, retrieved 10/05/15
+
+Payload Media, http://www.techotopia.com/index.php/Creating_and_Managing_Overflow_Menus_in_Android_Studio, retrieved 10/05/15
+
