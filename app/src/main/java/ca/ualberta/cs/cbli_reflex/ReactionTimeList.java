@@ -22,6 +22,8 @@ import java.util.List;
 
 /*
  * Created by Carin on 10/2/2015.
+ *
+ * This class stores reaction times in a list complete with several methods for manipulation.
  */
 public class ReactionTimeList {
 

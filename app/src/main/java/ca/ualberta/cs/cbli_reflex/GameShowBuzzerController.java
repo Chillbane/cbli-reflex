@@ -15,6 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
+// This class handles storage of buzzer stats.
 package ca.ualberta.cs.cbli_reflex;
 
 /*
@@ -28,6 +29,7 @@ public class GameShowBuzzerController {
     private static Game threePlayerGame = null;
     private static Game fourPlayerGame = null;
 
+    // For navigating the different game show buzzer modes
     static public Game getGame(int numOfPlayers) {
         if (numOfPlayers == 2) {
             if (twoPlayerGame == null) {

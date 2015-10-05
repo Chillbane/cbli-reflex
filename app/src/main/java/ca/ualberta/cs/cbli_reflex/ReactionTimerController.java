@@ -22,6 +22,7 @@ import java.util.List;
 
 /*
  * Created by Carin on 10/2/2015.
+ * This class handles storage of reaction time stats.
  */
 public class ReactionTimerController {
 

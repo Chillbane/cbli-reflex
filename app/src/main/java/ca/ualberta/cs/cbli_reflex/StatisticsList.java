@@ -1,3 +1,21 @@
+/*
+   cbli-reflex: Android app with reaction timer and game show buzzer modes
+   Copyright 2015 Carin Li
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+
 package ca.ualberta.cs.cbli_reflex;
 
 import java.util.ArrayList;
@@ -7,6 +25,9 @@ import java.util.List;
 
 /*
  * Created by Carin on 10/4/2015.
+ *
+ * This class generates all statistics for output to Statistics Activity using the
+ * ReactionTimerController and GameShowBuzzerController.
  */
 public class StatisticsList {
     protected List<String> statisticsList = new ArrayList<String>();
@@ -15,6 +36,7 @@ public class StatisticsList {
     private GameShowBuzzerController gsbc = new GameShowBuzzerController();
     private int numItems = rtc.getTotalTimes();
 
+    // populate statisticsList with statistics
     public StatisticsList() {
         clearStatistics();
         minReactionTime();
@@ -34,6 +56,7 @@ public class StatisticsList {
         return statisticsList.isEmpty();
     }
 
+    // Generates minimum reaction time stats
     public void minReactionTime() {
         int ofAllTimes;
         int lastTenTimes;
@@ -60,6 +83,7 @@ public class StatisticsList {
         }
     }
 
+    // Generates maximum reaction time stats
     public void maxReactionTime() {
         int ofAllTimes;
         int lastTenTimes;
@@ -86,6 +110,7 @@ public class StatisticsList {
         }
     }
 
+    // Generates average reaction time stats
     public void avgReactionTime() {
         int ofAllTimes;
         int lastTenTimes;
@@ -112,6 +137,7 @@ public class StatisticsList {
         }
     }
 
+    // Generates median reaction time stats
     public void medReactionTime() {
         double ofAllTimes;
         double lastTenTimes;
@@ -137,6 +163,7 @@ public class StatisticsList {
         }
     }
 
+    // Gets minimum reaction time
     public int getMin(int startIndex, int endIndex){
         int minValue = rtc.getReactionTime(startIndex);
         int currentValue;
@@ -151,6 +178,7 @@ public class StatisticsList {
         return minValue;
     }
 
+    // Gets maximum reaction time
     public int getMax(int startIndex, int endIndex){
         int maxValue = rtc.getReactionTime(startIndex);
         int currentValue;
@@ -165,6 +193,7 @@ public class StatisticsList {
         return maxValue;
     }
 
+    // Gets average reaction time
     public int getAvg(int startIndex, int endIndex){
         int total = 0;
 
@@ -175,6 +204,7 @@ public class StatisticsList {
         return (total / numItems);
     }
 
+    // Gets median reaction time
     public double getMed(int startIndex, int endIndex){
         ArrayList<Integer> intList = new ArrayList<Integer>();;
 
@@ -207,6 +237,7 @@ public class StatisticsList {
         }
     }
 
+    // Generates two player game buzzer stats
     public void twoPlayerGameBuzzes() {
         int playerOneBuzzes = 0;
         int playerTwoBuzzes = 0;
@@ -219,6 +250,7 @@ public class StatisticsList {
         statisticsList.add("2 Player Game -> Player 2 Buzzes: " + playerTwoBuzzes);
     }
 
+    // Generates three player game buzzer stats
     public void threePlayerGameBuzzes() {
         int playerOneBuzzes = 0;
         int playerTwoBuzzes = 0;
@@ -234,6 +266,7 @@ public class StatisticsList {
         statisticsList.add("3 Player Game -> Player 3 Buzzes: " + playerThreeBuzzes);
     }
 
+    // Generates four player game buzzer stats
     public void fourPlayerGameBuzzes() {
         int playerOneBuzzes = 0;
         int playerTwoBuzzes = 0;
@@ -259,7 +292,5 @@ public class StatisticsList {
     public String getStat(int index) {
         return statisticsList.get(index);
     }
-
-
 
 }

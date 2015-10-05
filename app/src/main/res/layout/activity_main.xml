@@ -24,7 +24,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Game Show Buzzer"
+        android:text="@string/game_show_buzzer"
         android:id="@+id/gameShowBuzzerButton"
         android:layout_gravity="left"
         android:layout_centerVertical="true"

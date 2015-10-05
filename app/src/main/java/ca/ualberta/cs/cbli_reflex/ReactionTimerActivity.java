@@ -1,3 +1,20 @@
+/*
+   cbli-reflex: Android app with reaction timer and game show buzzer modes
+   Copyright 2015 Carin Li
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
 package ca.ualberta.cs.cbli_reflex;
 
 import android.app.AlertDialog;
@@ -15,6 +32,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
+
+/* This class handles the Reaction Timer Activity. The user is first greeted with a prompt that
+ * gives instructions.  Upon its dismissal, a timer (not visible to the user) begins and waits
+ * between 10-200 ms before the WAIT button becomes GO.  The reaction time is recorded as the time
+ * between the GO button change to the user's click with ReactionTimerController.
+ */
 
 public class ReactionTimerActivity extends ActionBarActivity {
     protected long startTime;
@@ -67,7 +90,7 @@ public class ReactionTimerActivity extends ActionBarActivity {
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int BUTTON_POSITIVE) {
-                beginTest();
+                beginTest(); // upon dismissal, between timer countdown
             }
         });
         AlertDialog dialog = builder.show();

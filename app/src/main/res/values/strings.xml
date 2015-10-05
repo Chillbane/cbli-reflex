@@ -11,5 +11,6 @@
     <string name="click_button_at_GO_prompt">Click button at the GO prompt</string>
     <string name="wait">WAIT</string>
     <string name="go">GO</string>
+    <string name="game_show_buzzer">Game Show Buzzer</string>
 
 </resources>
