@@ -52,10 +52,6 @@ public class StatisticsList {
         return statisticsList;
     }
 
-    public Boolean isEmpty(){
-        return statisticsList.isEmpty();
-    }
-
     // Generates minimum reaction time stats
     public void minReactionTime() {
         int ofAllTimes;
