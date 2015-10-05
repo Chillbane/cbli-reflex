@@ -31,16 +31,20 @@ public class ReactionTimeList {
         reactionTimesList.add(reactionTime);
     }
 
-    public int getReactionTime(int i) {
-        return reactionTimesList.get(i);
-    }
-
     public int totalTimes() {
         return reactionTimesList.size();
     }
 
+    public int getReactionTime(int index) {
+        return reactionTimesList.get(index);
+    }
+
     public void clearReactionTimes(){
         reactionTimesList.clear();
+    }
+
+    public boolean isEmpty(){
+        return reactionTimesList.isEmpty();
     }
 
 }

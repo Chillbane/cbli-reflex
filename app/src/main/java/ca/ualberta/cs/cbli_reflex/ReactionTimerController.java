@@ -17,6 +17,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 package ca.ualberta.cs.cbli_reflex;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * Created by Carin on 10/2/2015.
  */
@@ -35,8 +38,20 @@ public class ReactionTimerController {
         getReactionTimeList().addReactionTime(reactionTime);
     }
 
-    public int getReactionTime(int i) {
-        return getReactionTimeList().getReactionTime(i);
+    public int getTotalTimes() {
+        return getReactionTimeList().totalTimes();
+    }
+
+    public int getReactionTime(int index) {
+        return getReactionTimeList().getReactionTime(index);
+    }
+
+    public boolean isEmpty() {
+        return getReactionTimeList().isEmpty();
+    }
+
+    public void clearReactionTimes() {
+        getReactionTimeList().clearReactionTimes();
     }
 
 }

@@ -26,6 +26,10 @@ public class Game {
         return playerList.get(playerNum - 1).getBuzzerCount();
     }
 
+    public boolean isEmpty() {
+        return playerList.isEmpty();
+    }
+
     public void clearBuzzes() {
         if (numOfPlayers != 0) {
             for (int i = 0; i < numOfPlayers; i++) {

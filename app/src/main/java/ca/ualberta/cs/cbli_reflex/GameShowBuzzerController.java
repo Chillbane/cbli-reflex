@@ -52,7 +52,17 @@ public class GameShowBuzzerController {
     }
 
     public int getBuzzes(int numOfPlayers, int playerNum) {
-        return  getGame(numOfPlayers).getBuzzes(playerNum);
+        return getGame(numOfPlayers).getBuzzes(playerNum);
+    }
+
+    public boolean isEmpty(int numOfPlayers){
+        return getGame(numOfPlayers).isEmpty();
+    }
+
+    public void clearBuzzes(){
+        getGame(1).clearBuzzes();
+        getGame(2).clearBuzzes();
+        getGame(3).clearBuzzes();
     }
 
 }
