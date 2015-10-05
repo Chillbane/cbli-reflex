@@ -29,7 +29,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-// This class handles a four player buzzer game. Buzzes are stored with GameShowBuzzerController.
+// This class handles a two player buzzer game. Buzzes are stored with GameShowBuzzerController.
 
 /* multiple button handling modified from Rams M, http://ramsandroid4all.blogspot.in/2013/01/
  * working-with-multiple-buttons.html, retrieved 10/04/15
